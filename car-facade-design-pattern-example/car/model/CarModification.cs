@@ -10,11 +10,11 @@ namespace car_facade_design_pattern_example.car.model
     public class CarModification
     {
         private String _modification;
-        private DateTime _date;
+        private String _date;
 
         // Constructors
 
-        public CarModification(String modification, DateTime date)
+        public CarModification(String modification, String date)
         {
             _modification = modification;
             _date = date;
@@ -31,7 +31,7 @@ namespace car_facade_design_pattern_example.car.model
             }
         }
 
-        public DateTime Date
+        public String Date
         {
             get { return _date; }
             set

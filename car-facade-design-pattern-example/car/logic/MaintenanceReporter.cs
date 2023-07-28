@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace car_facade_design_pattern_example.car.logic
 {
-    internal class MaintenanceReporter
+    public class MaintenanceReporter : IMaintenanceReporter
     {
+        public void ReportMaintenance(out String lastMaintenanceDate)
+        {
+            lastMaintenanceDate = DateTime.Now.ToString("dd.MM.yyyy");
+            Console.WriteLine("Maintenance reported successfully!");
+        }
     }
 }

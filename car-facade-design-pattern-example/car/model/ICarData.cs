@@ -6,7 +6,14 @@ using System.Threading.Tasks;
 
 namespace car_facade_design_pattern_example.car.model
 {
-    internal class ICarData
+    public interface ICarData
     {
+        void SaveCar();
+
+        void ChangeColor();
+
+        void ReportMaintenance();
+
+        void ReportModification();
     }
 }

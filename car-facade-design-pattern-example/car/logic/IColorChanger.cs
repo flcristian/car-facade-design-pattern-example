@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace car_facade_design_pattern_example.car.logic
 {
-    internal class IColorChanger
+    public interface IColorChanger
     {
+        void ChangeColor(out String color);
     }
 }

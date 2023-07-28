@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace car_facade_design_pattern_example.car.logic
 {
-    internal class ColorChanger
+    public class ColorChanger : IColorChanger
     {
+        public void ChangeColor(out String color)
+        {
+            Console.WriteLine("Enter the color :");
+            color = Console.ReadLine();
+            Console.WriteLine("Color changed successfully!");
+        }
     }
 }
